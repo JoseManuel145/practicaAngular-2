@@ -1,0 +1,73 @@
+/* Contenedor de la cuadrícula */
+.grid-container {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+  grid-template-rows: auto auto; /* Las filas se ajustan automáticamente */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Imagen de la banda */
+.image-band {
+  grid-column: 1 / 2; /* Coloca en la primera columna */
+  grid-row: 1 / 2; /* Primera fila */
+  justify-self: start; /* Alineación a la izquierda */
+}
+
+.image-band img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Sección "Quiénes somos" */
+.about-section {
+  grid-column: 2 / 3; /* Coloca en la segunda columna */
+  grid-row: 1 / 2;
+  align-self: start; /* Alineación al inicio */
+}
+
+.about-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Lista de éxitos */
+.success-list {
+  grid-column: 1 / 2; /* Primera columna */
+  grid-row: 2 / 3; /* Segunda fila */
+}
+
+.success-list h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.success-list ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.success-list li {
+  margin-bottom: 5px;
+}
+
+/* Imagen de los álbumes */
+.image-albums {
+  grid-column: 2 / 3; /* Segunda columna */
+  grid-row: 2 / 3; /* Segunda fila */
+  justify-self: end; /* Alineación a la derecha */
+}
+
+.image-albums img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
